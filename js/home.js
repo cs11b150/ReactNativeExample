@@ -14,6 +14,8 @@ export default class Home extends React.Component {
             components: [
                 'Button',
                 'ListView',
+                'ActivityIndicator',
+                'FlatList',
             ]
         };
     }
@@ -26,11 +28,13 @@ export default class Home extends React.Component {
     render() {
 
         return <View style={styles.container}>
-            {this.state.components.map((item, index) => {
-                return <View key={index} style={styles.item}>
-                    <Button onPress={this.onPress.bind(this, index)} title={item}/>
-                </View>
-            })}
+            <View style={styles.section}>
+                {this.state.components.map((item, index) => {
+                    return <View key={index} style={styles.item}>
+                        <Button onPress={this.onPress.bind(this, index)} title={item}/>
+                    </View>
+                })}
+            </View>
         </View>
     }
 }
@@ -39,9 +43,14 @@ const styles = StyleSheet.create({
     container: {
         width: '100%',
         height: '100%',
-        alignItems: 'center',
+    },
+    section: {
+        flexDirection: 'row',
+        flexWrap: 'wrap',
+        alignItems: 'flex-start',
     },
     item: {
-        paddingTop: 20
+        paddingTop: 20,
+        paddingLeft: 20,
     }
 });
