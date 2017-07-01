@@ -16,6 +16,7 @@ export default class Home extends React.Component {
                 'ListView',
                 'ActivityIndicator',
                 'FlatList',
+                'NativeToastAndroid',
             ]
         };
     }

@@ -4,7 +4,7 @@ import {ListView, Text} from 'react-native';
 export default class JListView extends React.Component {
 
     static navigationOptions = {
-        title: 'Button'
+        title: 'ListView'
     };
     
     constructor(props) {
