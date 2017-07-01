@@ -5,6 +5,8 @@ import com.facebook.react.bridge.JavaScriptModule;
 import com.facebook.react.bridge.NativeModule;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.uimanager.ViewManager;
+import com.reactnativeexample.modules.JCallbacks;
+import com.reactnativeexample.modules.JEventListener;
 import com.reactnativeexample.modules.JToastModule;
 
 import java.util.ArrayList;
@@ -15,11 +17,13 @@ import java.util.List;
  * Created by Jia.Lin on 2017/7/1.
  */
 
-public class ExampleReactPackage implements ReactPackage {
+class ExampleReactPackage implements ReactPackage {
     @Override
     public List<NativeModule> createNativeModules(ReactApplicationContext reactContext) {
         List<NativeModule> modules = new ArrayList<>();
         modules.add(new JToastModule(reactContext));
+        modules.add(new JCallbacks(reactContext));
+        modules.add(new JEventListener(reactContext));
         return modules;
     }
 

@@ -6,5 +6,10 @@ export default StyleSheet.create({
         height: '100%',
         alignItems: 'center',
         justifyContent: 'center',
+    },
+    child_container: {
+        flex: 1,
+        alignItems: 'center',
+        justifyContent: 'center',
     }
 });

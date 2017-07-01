@@ -17,6 +17,8 @@ export default class Home extends React.Component {
                 'ActivityIndicator',
                 'FlatList',
                 'NativeToastAndroid',
+                'JCallbacks',
+                'JEventListener',
             ]
         };
     }
