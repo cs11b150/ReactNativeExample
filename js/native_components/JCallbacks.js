@@ -26,7 +26,7 @@ export default class JCallbacks extends React.Component {
     }
 
     async handleTestPromisesPress() {
-        const textPromises = await _JCallbacks.testPromises();
+        const textPromises = await _JCallbacks['testPromises']();
         this.setState({
             textPromises: textPromises
         })

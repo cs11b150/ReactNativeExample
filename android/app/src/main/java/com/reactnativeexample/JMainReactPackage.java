@@ -17,7 +17,7 @@ import java.util.List;
  * Created by Jia.Lin on 2017/7/1.
  */
 
-class ExampleReactPackage implements ReactPackage {
+class JMainReactPackage implements ReactPackage {
     @Override
     public List<NativeModule> createNativeModules(ReactApplicationContext reactContext) {
         List<NativeModule> modules = new ArrayList<>();
