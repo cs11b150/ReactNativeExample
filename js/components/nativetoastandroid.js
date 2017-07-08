@@ -1,7 +1,7 @@
 import React from 'react';
 import {View, Button} from 'react-native';
 import CommonStyles from '../styles/common';
-import JToastAndroid from '../native_components/ToastAndroid';
+import JToastAndroid from '../native_android/ToastAndroid';
 
 export default class JNativeToastAndroid extends React.Component {
     
